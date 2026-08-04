@@ -1,0 +1,28 @@
+POST http://localhost:8080/product/add
+Content-Type: application/json
+
+{
+  "id": 12,
+  "name": "PS5",
+  "price": 50000,
+  "qty": 5
+}
+###
+GET http://localhost:8080/product/list
+
+###
+GET http://localhost:8080/product/1
+
+###
+DELETE http://localhost:8080/product/1
+
+###
+PUT http://localhost:8080/product/12
+Content-Type: application/json
+
+{
+  "id": "12",
+  "name":"Headphones",
+  "price":5000,
+  "qty":8
+}
